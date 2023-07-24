@@ -1,14 +1,43 @@
+/* sets a base margin and padding for anything that hasn't defined a margin or padding */
 
-
-
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
 body {
     width: 95%;
     margin: auto;
     display: grid;
-    grid-template-columns: .1fr 2.1fr .1fr;
-    grid-template-rows: .5fr 2fr .5fr 6fr .5fr 2fr .5fr;
-
+    grid-template-columns:.1fr 1fr 1fr 1fr 1fr .1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
+}
 
+/* places the logo in the nav bar and gives it a size and aligns it*/
+.logo {
+    justify-self: left;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    height: 100%;
+    width: 100%;
+}
+
+/* places the nav bar links */
+.links {
+    grid-column: 3/4;
+    align-self: center;
+}
+
+/* makes a black background for the nav bar places the it. It also makes a sub grid for links*/
+nav {
+    background-color: black;
+    text-align: right;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    height: 100px;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: end;
 }
