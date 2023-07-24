@@ -56,3 +56,22 @@ nav {
     grid-template-columns: .9fr 1.2fr;
     grid-template-rows: 240px 240px;
 }
+
+/* places the background of the contact bar and makes a sub grid */
+.ul2 {
+    background-color: black;
+    grid-row: 6/7;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 120px;
+    grid-gap: 10px;
+    list-style: none;
+    justify-items: center;
+}
+
+/* gives the text in contact bar a size and colour */
+.ul2 p {
+    font-size: 2vw;
+    color: white
+}
