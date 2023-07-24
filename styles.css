@@ -47,3 +47,12 @@ nav {
     grid-row: 4/5;
     grid-column: 2/3;
 }
+
+/* makes a sub grid for the home page */
+.gridy {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: .9fr 1.2fr;
+    grid-template-rows: 240px 240px;
+}
