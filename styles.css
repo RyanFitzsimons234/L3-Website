@@ -44,7 +44,7 @@ nav {
 /* gives the links on the nav bar a colour, font and size */
 nav a {
     text-decoration: none;
-    font-size: 5vw;
+    font-size: 5vh;
     color: black;
     margin: 2vh 2vw;
 }
@@ -60,7 +60,6 @@ nav a {
     width: 10vw;
 }
 
-
 /* makes a black background for the advertising */
 .about {
     background-color: white;
@@ -71,11 +70,22 @@ nav a {
     font-size: 3vh;
 }
 
-.h1 {
+.about a {
     color: black;
+    font-size: 4vh;
 }
-.p {
+
+.about a p {
     color: black;
+    font-size: 3vh;
+
+}
+
+.classroom {
+    grid-row: 4/5;
+    grid-column: 4/6;
+    height: 100px;
+    min-height: 50vh;
 }
 
 
@@ -86,14 +96,15 @@ nav a {
     grid-column: 4/6;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 120px;
+    grid-template-rows: 10vh;
     grid-gap: 10px;
     list-style: none;
     justify-items: center;
 }
 
 /* gives the text in contact bar a size and colour */
-.ul p {
-    font-size: 2vw;
+.ul a {
     color: black;
+    font-size: 3vw;
+    align-self: center;
 }
