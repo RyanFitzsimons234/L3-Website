@@ -6,62 +6,74 @@
 }
 
 body {
-    width: 95%;
+    max-width: 100vw;
+    max-height: 100vh;
     margin: auto;
     display: grid;
-    grid-template-columns:.1fr 1fr 1fr 1fr 1fr .1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns:.1fr 1fr .1fr 1fr 1fr .1fr;
+    grid-template-rows: .2fr .2fr .2fr 1.5fr .2fr .5fr .2fr;
     align-items: center;
+}
+
+.background {
+ grid-row: 1/7;
+ grid-column: 1/6;
+}
+
+
+
+/* makes a black background for the nav bar places the it. It also makes a sub grid for links*/
+nav {
+    background-color: black;
+    text-align: center;
+    grid-row: 2/3;
+    grid-column: 2/6;
+    height: 100px;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+/* places the nav bar links */
+.links {
+    grid-column: 2/6;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
 }
 
 /* places the logo in the nav bar and gives it a size and aligns it*/
 .logo {
     justify-self: left;
-    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+    grid-row: 1/1;
     grid-column: 1/2;
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
 }
 
-/* places the nav bar links */
-.links {
-    grid-column: 3/4;
+/* gives the links on the nav bar a colour, font and size */
+nav a {
+    text-decoration: none;
+    font-size: 3vw;
     align-self: center;
+    justify-self: center;
 }
 
-/* makes a black background for the nav bar places the it. It also makes a sub grid for links*/
-nav {
-    background-color: black;
-    text-align: right;
-    grid-row: 2/3;
-    grid-column: 2/3;
-    height: 100px;
-    align-self: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: end;
-}
-
-.background {
-    background-color: black;
-    grid-row: 4/5;
-    grid-column: 2/3;
-}
-
-/* makes a sub grid for the home page */
 .gridy {
     width: 95%;
     margin: auto;
     display: grid;
-    grid-template-columns: .9fr 1.2fr;
-    grid-template-rows: 240px 240px;
+
 }
 
 /* places the background of the contact bar and makes a sub grid */
 .ul2 {
-    background-color: black;
+    background-color: white;
     grid-row: 6/7;
-    grid-column: 2/3;
+    grid-column: 4/6;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 120px;
@@ -73,5 +85,5 @@ nav {
 /* gives the text in contact bar a size and colour */
 .ul2 p {
     font-size: 2vw;
-    color: white
+    color: black;
 }
