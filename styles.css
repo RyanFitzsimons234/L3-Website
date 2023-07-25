@@ -24,23 +24,29 @@ body {
 
 /* makes a black background for the nav bar places the it. It also makes a sub grid for links*/
 nav {
-    background-color: black;
-    text-align: center;
+    background-color: white;
+    text-align: right;
     grid-row: 2/3;
     grid-column: 2/6;
-    height: 100px;
+    height: 15vh;
     align-self: center;
-    justify-self: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: end;
 }
+
 /* places the nav bar links */
 .links {
-    grid-column: 2/6;
-    grid-row: 1/2;
+    grid-column: 2/4;
     align-self: center;
-    justify-self: center;
+}
+
+/* gives the links on the nav bar a colour, font and size */
+nav a {
+    text-decoration: none;
+    font-size: 5vw;
+    color: black;
+    margin: 2vh 2vw;
 }
 
 /* places the logo in the nav bar and gives it a size and aligns it*/
@@ -50,27 +56,31 @@ nav {
     justify-self: center;
     grid-row: 1/1;
     grid-column: 1/2;
-    height: 80%;
-    width: 80%;
+    height: 15vh;
+    width: 10vw;
 }
 
-/* gives the links on the nav bar a colour, font and size */
-nav a {
-    text-decoration: none;
-    font-size: 3vw;
-    align-self: center;
-    justify-self: center;
+
+/* makes a black background for the advertising */
+.about {
+    background-color: white;
+    grid-row: 4/7;
+    grid-column: 2/3;
+    min-height: 60vh;
+    align-self: top;
+    font-size: 3vh;
 }
 
-.gridy {
-    width: 95%;
-    margin: auto;
-    display: grid;
-
+.h1 {
+    color: black;
 }
+.p {
+    color: black;
+}
+
 
 /* places the background of the contact bar and makes a sub grid */
-.ul2 {
+.ul {
     background-color: white;
     grid-row: 6/7;
     grid-column: 4/6;
@@ -83,7 +93,7 @@ nav a {
 }
 
 /* gives the text in contact bar a size and colour */
-.ul2 p {
+.ul p {
     font-size: 2vw;
     color: black;
 }
