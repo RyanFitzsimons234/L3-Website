@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<!-- The tile of the page and likes the page to the stylesheet -->
+<!-- Also sets up the javascript for the page -->
+
+<head>
+    <title>
+        SBHS DTC </title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<!-- stores feedback from the user -->
+<script>
+    document.getElementById("myButton").onclick = function () {
+        var feedback = document.getElementById("myText").value;
+        console.log(feedback);
+    }
+</script>
+
+
+<!-- The main grid for the page -->
+
+<body>
+    <!-- The background on the index -->
+    <img class=background src="images/background.png" alt="background">
+    <!-- The navigation and the links for the other pages -->
+    <nav>
+        <div class="links">
+            <a href="index.html">Home </a>
+            <a href="about.html">About </a>
+            <a href="contact.html">Contact </a>
+        </div>
+        <!-- Logo on the Navigation bar -->
+        <img class=logo src="images/logo.png" alt="logo">
+    </nav>
+    <!-- The grid used for the feedback text boxes -->
+    <div class="gridy">
+        <!-- The feedback text boxes -->
+        <div class="java">
+            <label>Enter your name:</label><br>
+            <input type="text" id="myText"><br>
+            <button type="button" id="myButton">submit</button>
+        </div>
+        <div class="java2">
+            <label>Enter your email:</label><br>
+            <input type="text" id="myText"><br>
+            <button type="button" id="myButton">submit</button>
+        </div>
+        <div class="java3">
+            <label>Enter how you feel:</label><br>
+            <input type="text" id="myText"><br>
+            <button type="button" id="myButton">submit</button>
+        </div>
+        <div class="java4">
+            <label>Enter any feedback:</label><br>
+            <input type="text" id="myText"><br>
+            <button type="button" id="myButton">submit</button>
+        </div>
+    </div>
+    <!-- Indicates that this page is unfinished -->
+    <div class="unfinished">Unfinished</div>
+</body>
