@@ -18,6 +18,14 @@
         var feedback = document.getElementById("myText").value;
         console.log(feedback);
     }
+
+    function feedback() {
+        if (myText == null) {
+            alert("Please enter your feedback")
+        } else {
+            alert("Thank you for your feedback")
+        }
+    }
 </script>
 
 
@@ -42,22 +50,23 @@
         <div class="java">
             <label>Enter your name:</label><br>
             <input type="text" id="myText"><br>
-            <button type="button" id="myButton">submit</button>
+            <button type="button" id="myButton" onclick="feedback()">submit</button>
         </div>
         <div class="java2">
             <label>Enter your email:</label><br>
             <input type="text" id="myText"><br>
-            <button type="button" id="myButton">submit</button>
+            <button type="button" id="myButton" onclick="feedback()">submit</button>
         </div>
         <div class="java3">
             <label>Enter how you feel:</label><br>
             <input type="text" id="myText"><br>
-            <button type="button" id="myButton">submit</button>
+            <button type="button" id="myButton" onclick="feedback()">submit</button>
         </div>
         <div class="java4">
             <label>Enter any feedback:</label><br>
             <input type="text" id="myText"><br>
-            <button type="button" id="myButton">submit</button>
+            <button type="button" id="myButton" onclick="feedback()">submit</button>
+
         </div>
     </div>
     <!-- Indicates that this page is unfinished -->
