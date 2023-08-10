@@ -30,6 +30,8 @@ body {
 .background {
     grid-row: 1/7;
     grid-column: 1/6;
+    height: auto;
+    width: auto;
 }
 
 
@@ -148,12 +150,10 @@ nav a:hover {
     text-align: left;
 }
 
-/* places the classroom image on the home page */
-.classroom {
+marquee {
     grid-row: 4/5;
     grid-column: 4/6;
-    height: 100px;
-    min-height: 50vh;
+    align-self: center;
 }
 
 /* Gives the text on the about page a size, font, colour and place to go */
@@ -193,9 +193,10 @@ p2 {
 /* gives the image of the game a place to go */
 .game {
     grid-column: 4/6;
-    grid-row: 2/7;
+    grid-row: 3/7;
     text-align: bottom;
     width: 35vw;
+    height: 60vh;
 }
 
 /* the sub grid for javascript on the contact page */
